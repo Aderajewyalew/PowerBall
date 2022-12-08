@@ -40,6 +40,7 @@ class Value(Winning_number,Lucky_numbers):
         print(green,win_number, yellow,powerball_win,returen)
         print(f"{blue}your lucky ball Number", end="  ")
         print(green,lucky_numbers, yellow, powerball_lucky, returen)
+        print()
         print(f"{blue}The number of white balls {yellow}{countd}")
         print("___________________________________________________________")
         if powerball_win != powerball_lucky and countd == 5:
