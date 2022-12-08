@@ -36,34 +36,34 @@ class Value(Winning_number,Lucky_numbers):
 
         #   To know how many numbers has a customer from given today's winning number
 
-        print("powerball winning Numbers", end="  ")
+        print(f"{blue}powerball winning Numbers", end="  ")
         print(green,win_number, yellow,powerball_win,returen)
-        print("your lucky ball Number", end="  ")
+        print(f"{blue}your lucky ball Number", end="  ")
         print(green,lucky_numbers, yellow, powerball_lucky, returen)
-        print(f"The number of white balls {countd}")
+        print(f"{blue}The number of white balls {yellow}{countd}")
         print("___________________________________________________________")
         if powerball_win != powerball_lucky and countd == 5:
-            print("5 Correct White Balls and  the  Powerball: $1,000,000")
+            print(f"{green}5 Correct White Balls and  the  Powerball: $1,000,000")
         elif powerball_win == powerball_lucky and countd == 4:
-            print("4 Correct White Balls, but no Powerball: $10,000")
+            print(f"{green}4 Correct White Balls, but no Powerball: $10,000")
         elif powerball_win != powerball_lucky  and countd == 4:
-            print("4 Correct White Balls, but no Powerball: $100")
+            print(f"{green}4 Correct White Balls, but no Powerball: $100")
         elif powerball_win == powerball_lucky  and countd == 3:
-            print("3 Correct White Balls and the Powerball: $100")
+            print(f"{green}3 Correct White Balls and the Powerball: $100")
         elif powerball_win != powerball_lucky and countd == 3:
-            print("3 Correct White Balls, but no Powerball: $7")
+            print(f"{green}3 Correct White Balls, but no Powerball: $7")
         elif powerball_win == powerball_lucky  and countd == 2:
-            print("2 Correct White Balls, but no Powerball: $7")
+            print(f"{green}2 Correct White Balls, but no Powerball: $7")
         elif powerball_win!= powerball_lucky  and countd == 2:
-            print("you are not lucky\nTry agine!")
+            print(f"{red}you are not lucky\nTry agine!")
         elif powerball_win == powerball_lucky  and countd == 1:
-            print("1 Correct White Balls and the Powerball: $4")
+            print(f"{green}1 Correct White Balls and the Powerball: $4")
         elif powerball_win!= powerball_lucky  and countd ==1:
-            print("you are not lucky\nTry agine!")
+            print(f"{red}you are not lucky\nTry agine!")
         elif powerball_win == powerball_lucky and countd == 0:
-            print(" 0 Correct White Balls, but no Powerball: $4")
+            print(f"{green} 0 Correct White Balls, but no Powerball: $4")
         else:
-            print("you are not lucky\nTry agine!")
+            print(f"{red}you are not lucky\nTry agine!")
 
 
 
